@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f"
+    tools:context=".ConsultaEmpresa">
+
+    <TextView
+        android:id="@+id/txtRegistrados"
+        android:layout_width="310dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Usuarios Registrados"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCalculos"
+        android:layout_width="311dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="48dp"
+        android:text="Sus Resultados"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSeleccion" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="134dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="45dp"
+        android:onClick="onClick"
+        android:text="Calcular"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toStartOf="@+id/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCalculos" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="143dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="onClick"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/txtCalculos" />
+
+    <Spinner
+        android:id="@+id/spinnerSeleccion"
+        android:layout_width="266dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegistrados" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

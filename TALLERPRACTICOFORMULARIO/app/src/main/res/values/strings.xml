@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TALLER-PRACTICO-FORMULARIO</string>
+    <string-array name="seleccion">
+        <item>Seleccione su consulta</item>
+        <item>Cual es la persona mas joven</item>
+        <item>Cual es la persona mas senil</item>
+        <item>Cual es el salario mas alto</item>
+        <item>Cual es el salario mas bajo</item>
+        <item>Cual es el promedio entre salarios</item>
+        <item>Cantidad de usuarios y promedio salarial por cargo</item>
+    </string-array>
+</resources>
